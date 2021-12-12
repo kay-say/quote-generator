@@ -14,32 +14,6 @@ html {
 
 body {
   height: 100vh;
-  -webkit-transition: fadeInOut 400ms ease-in-out;
-  transition: fadeInOut 400ms ease-in-out;
-}
-
-@-webkit-keyframes fadeInOout {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInOout {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .flex {

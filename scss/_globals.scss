@@ -14,14 +14,14 @@ html{
 
 body{
     height: 100vh;
-    transition: fadeInOut 400ms ease-in-out;
+    // transition: fadeInOut 400ms ease-in-out;
 }
 
-@keyframes fadeInOout {
-    0%{opacity: 1;}
-    50%{opacity: 0;}
-    100%{opacity: 1;}
-}
+// @keyframes fadeInOout {
+//     0%{opacity: 1;}
+//     50%{opacity: 0;}
+//     100%{opacity: 1;}
+// }
 
 .flex{
     display: flex;
