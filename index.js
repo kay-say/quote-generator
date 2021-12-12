@@ -24,10 +24,7 @@ function getColor(){
     const r=Math.floor(Math.random()*256)
     const g=Math.floor(Math.random()*256)
     const b=Math.floor(Math.random()*256)
-    body.style.backgroundColor=`rgb(${r},${g},${b})`
-    body.style.animation="fadeInOut 2500ms ease-in-out"
+    body.style.background=`rgb(${r},${g},${b})`
     quote.style.color=`rgb(${r},${g},${b})`
-    quote.style.animation="opak 2000ms ease-in-out"
-    
 }
 getColor()
