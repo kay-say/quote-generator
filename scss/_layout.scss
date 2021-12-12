@@ -1,0 +1,85 @@
+body{
+    transition: background 2s;
+    -webkit-transition: background 2s;
+}
+
+.container{
+    width: 500px;
+    // height: 300px;
+    padding: 2em;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .quote{
+        //background-color: blue;
+        padding: 2em;
+        flex: 1;
+        transition: color 2s;
+        -webkit-transition: color 2s;
+        position: relative;
+
+        &::before{
+            position: absolute;
+            content: url("../images/quote\ left.png");
+            transform: scale(0.3);
+            top: 0;
+            left:-20px;
+        }
+
+        &::after{
+            position: absolute;
+            content: url("../images/quote\ right.png");
+            transform: scale(0.3);
+            bottom: 0;
+            right: -5px;
+        }
+    }
+
+    .footer{
+        padding: 1em 0;
+        //background-color: red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .social{
+            display: flex;
+            
+
+            span{
+                cursor: pointer;
+                background: gray;
+                width: 40px;
+                height: 40px;
+                margin-right: 0.2em;
+                transform: opacity 200ms ease-in-out;
+
+            &:hover{
+                opacity: 0.9;
+            }
+
+                
+            }
+        }
+
+        button{
+            //width: 100px;
+            cursor: pointer;
+            padding: 0.5em 1rem;
+            font-size: 1.1rem;
+            font-family: inherit;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border: none;
+            background-color: orange;
+            color: $white;
+            transform: opacity 200ms ease-in-out;
+
+            &:hover{
+                opacity: 0.9;
+            }
+        }
+    }
+}
